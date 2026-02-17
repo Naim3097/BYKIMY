@@ -32,7 +32,7 @@ export function Header() {
           }
         `}
       >
-        <div className="mx-auto flex h-28 max-w-[1200px] items-center justify-between px-5 md:px-8 lg:px-12">
+        <div className="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-5 md:px-8 lg:px-12">
           {/* Logo */}
           <Link href="/" className="relative z-50 flex items-center gap-2">
             <Image
@@ -40,7 +40,7 @@ export function Header() {
               alt="BYKI"
               width={330}
               height={96}
-              className="h-24 w-auto"
+              className="h-12 w-auto"
               priority
             />
           </Link>
@@ -103,7 +103,7 @@ export function Header() {
 
       {/* Mobile Menu Overlay */}
       {mobileOpen && (
-        <div className="fixed inset-0 z-40 bg-white flex flex-col pt-20 px-6 md:hidden">
+        <div className="fixed inset-0 z-40 bg-white flex flex-col pt-18 px-6 md:hidden">
           <nav className="flex flex-col gap-1">
             {NAV_LINKS.map((link) => (
               <Link
