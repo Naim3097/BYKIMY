@@ -43,7 +43,7 @@ export function Testimonials() {
             <SectionLabel>Testimonials</SectionLabel>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-byki-black sm:text-4xl leading-tight mb-16">
               Trusted by drivers{" "}
-              <span className="text-byki-green">across Malaysia.</span>
+              <span className="text-byki-green italic">across Malaysia.</span>
             </h2>
           </motion.div>
 

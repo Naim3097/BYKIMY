@@ -20,7 +20,7 @@ export function ComparisonSection() {
             <SectionLabel>Compare</SectionLabel>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-byki-black sm:text-4xl leading-tight">
               Choose your{" "}
-              <span className="text-byki-green">diagnostic level.</span>
+              <span className="text-byki-green italic">diagnostic level.</span>
             </h2>
             <p className="mt-4 text-lg text-byki-dark-gray">
               Both versions connect via ELM327. Pro unlocks the full diagnostic experience.

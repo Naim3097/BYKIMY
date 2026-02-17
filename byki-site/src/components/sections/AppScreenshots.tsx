@@ -40,7 +40,7 @@ export function AppScreenshots() {
         >
           <SectionLabel>App Interface</SectionLabel>
           <h2 className="mt-4 text-3xl font-bold tracking-tight text-byki-black sm:text-4xl leading-tight">
-            See BYKI in <span className="text-byki-green">Action.</span>
+            See BYKI in <span className="text-byki-green italic">Action.</span>
           </h2>
         </motion.div>
 

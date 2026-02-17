@@ -5,6 +5,14 @@ const nextConfig: NextConfig = {
     // TypeScript errors verified separately via `tsc --noEmit`
     ignoreBuildErrors: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+    ],
+  },
 };
 
 export default nextConfig;

@@ -68,7 +68,7 @@ export function Hero() {
               className="text-[2.5rem] leading-[1.08] font-bold tracking-tight text-byki-black sm:text-5xl md:text-6xl lg:text-[4.25rem]"
             >
               Know your car.{" "}
-              <span className="text-byki-green">Inside out.</span>
+              <span className="text-byki-green italic">Inside out.</span>
             </motion.h1>
 
             {/* Subheadline */}
