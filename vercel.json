@@ -1,6 +1,6 @@
 {
-  "installCommand": "cd byki-site && npm install",
-  "buildCommand": "cd byki-site && npm run build",
+  "installCommand": "npm install --prefix byki-site",
+  "buildCommand": "npm run build --prefix byki-site",
   "outputDirectory": "byki-site/.next",
   "framework": "nextjs"
 }
