@@ -1,0 +1,163 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-02-13",
+  "source": "OEM + Community + Workshop Data",
+  "tsbs": [
+    {
+      "id": "proton-saga-2024-001",
+      "tsbNumber": "PROTON-TSB-2024-001",
+      "manufacturer": "Proton Holdings",
+      "bulletinDate": "2024-03-15",
+      "title": "CVT Transmission Judder at Low Speed",
+      "summary": "Some 2024 Proton Saga (DNGA) vehicles may experience CVT judder or shudder during low-speed acceleration (5-20 km/h). This is caused by outdated TCM software.",
+      "affectedModels": ["Saga"],
+      "affectedYears": [2024, 2025],
+      "affectedVINRange": {
+        "start": "000001",
+        "end": "015000"
+      },
+      "category": "TRANSMISSION",
+      "severity": "MODERATE",
+      "relatedDTCs": ["P0731", "P0741", "U0101"],
+      "symptoms": [
+        "Shudder or judder during acceleration",
+        "Vibration at 10-20 km/h",
+        "Hesitation when accelerating from stop"
+      ],
+      "diagnosis": [
+        "Connect to Proton diagnostic tool",
+        "Check TCM software version (must be < 3.2.1)",
+        "Perform CVT fluid temperature check",
+        "Test drive to verify symptom"
+      ],
+      "repairProcedure": [
+        "Update TCM software to version 3.2.1 or later",
+        "Clear transmission adaptive values",
+        "Perform CVT relearn procedure",
+        "Test drive to confirm repair"
+      ],
+      "partsRequired": [],
+      "laborHours": 1.0,
+      "dataSource": "OEM",
+      "url": "https://proton.com/service-bulletins/2024-001"
+    },
+    {
+      "id": "perodua-myvi-2023-002",
+      "tsbNumber": "PERODUA-TSB-2023-002",
+      "manufacturer": "Perodua",
+      "bulletinDate": "2023-11-20",
+      "title": "D-CVT Oil Cooler Leak",
+      "summary": "Some 2023 Perodua Myvi (DNGA) vehicles with D-CVT transmission may develop oil cooler line leak, resulting in low transmission fluid level.",
+      "affectedModels": ["Myvi", "Ativa"],
+      "affectedYears": [2023, 2024],
+      "category": "TRANSMISSION",
+      "severity": "HIGH",
+      "relatedDTCs": ["P0868", "P0841", "P0842"],
+      "symptoms": [
+        "Transmission fluid leak under vehicle",
+        "Low transmission fluid warning light",
+        "Harsh shifting",
+        "Transmission overheating"
+      ],
+      "diagnosis": [
+        "Inspect for transmission fluid leaks",
+        "Check cooler line connections",
+        "Verify fluid level and condition",
+        "Read DTCs for pressure-related codes"
+      ],
+      "repairProcedure": [
+        "Replace CVT oil cooler lines (PN: B4513-B1510)",
+        "Replace cooler O-rings and seals",
+        "Refill with Perodua D-CVT Fluid (4.2L)",
+        "Clear DTCs and test drive"
+      ],
+      "partsRequired": [
+        {
+          "partNumber": "B4513-B1510",
+          "description": "CVT Oil Cooler Line (Input)",
+          "quantity": 1
+        },
+        {
+          "partNumber": "B4513-B1520",
+          "description": "CVT Oil Cooler Line (Return)",
+          "quantity": 1
+        },
+        {
+          "partNumber": "B4513-B1005",
+          "description": "O-Ring Kit",
+          "quantity": 1
+        },
+        {
+          "partNumber": "08886-01705",
+          "description": "Perodua D-CVT Fluid (1L)",
+          "quantity": 5
+        }
+      ],
+      "laborHours": 2.5,
+      "dataSource": "OEM"
+    },
+    {
+      "id": "toyota-vios-2022-003",
+      "tsbNumber": "TOYOTA-TSB-2022-TC003",
+      "manufacturer": "Toyota Motor Thailand",
+      "bulletinDate": "2022-09-10",
+      "title": "CVT Belt Slip During Sudden Acceleration",
+      "summary": "Some 2022 Toyota Vios vehicles with CVT may experience belt slip during wide-open-throttle acceleration. This is a software calibration issue.",
+      "affectedModels": ["Vios", "Yaris"],
+      "affectedYears": [2022, 2023],
+      "category": "TRANSMISSION",
+      "severity": "MODERATE",
+      "relatedDTCs": ["P0741", "P1740"],
+      "symptoms": [
+        "Engine revs without acceleration",
+        "Burning smell from transmission",
+        "Transmission overheat warning"
+      ],
+      "diagnosis": [
+        "Verify CVT fluid condition and level",
+        "Check for DTCs P0741, P1740",
+        "Perform CVT belt slip test",
+        "Check TCM software version"
+      ],
+      "repairProcedure": [
+        "Update TCM software to latest calibration",
+        "Reset CVT adaptive learning",
+        "Test drive with gradual acceleration"
+      ],
+      "partsRequired": [],
+      "laborHours": 0.8,
+      "dataSource": "OEM"
+    },
+    {
+      "id": "honda-city-2024-004",
+      "tsbNumber": "HONDA-TSB-2024-042",
+      "manufacturer": "Honda Motor Co",
+      "bulletinDate": "2024-01-25",
+      "title": "Infotainment System Black Screen on Startup",
+      "summary": "Some 2024 Honda City RS vehicles may experience black screen on infotainment system after ignition on. This is a software bug in the head unit.",
+      "affectedModels": ["City", "HR-V"],
+      "affectedYears": [2024],
+      "category": "INFOTAINMENT",
+      "severity": "INFO",
+      "relatedDTCs": [],
+      "symptoms": [
+        "Black screen on startup",
+        "No audio output",
+        "Backup camera not displaying"
+      ],
+      "diagnosis": [
+        "Verify symptom occurs",
+        "Check head unit software version",
+        "Attempt system reset (hold power + volume)"
+      ],
+      "repairProcedure": [
+        "Update head unit software via Honda Diagnostic System",
+        "Perform system initialization",
+        "Verify all functions operate normally"
+      ],
+      "partsRequired": [],
+      "laborHours": 0.5,
+      "dataSource": "OEM"
+    }
+  ]
+}

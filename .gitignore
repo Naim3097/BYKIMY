@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+package-lock.json
+package.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# fonts (large binaries)
+Santoshi Font/
+
+# python cleanup scripts
+*.py
+
+# editor
+.vscode/
+
+# env
+.env*

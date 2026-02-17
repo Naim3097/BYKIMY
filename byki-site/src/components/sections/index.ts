@@ -1,0 +1,17 @@
+export { Hero } from "./Hero";
+export { Manifesto } from "./Manifesto";
+export { HowItWorksSteps } from "./HowItWorksSteps";
+export { FeatureGrid } from "./FeatureGrid";
+export { SystemCoverage } from "./SystemCoverage";
+export { ComparisonSection } from "./ComparisonSection";
+export { ComparisonTable } from "./ComparisonTable";
+export { Testimonials } from "./Testimonials";
+export { FAQAccordion } from "./FAQAccordion";
+export { ContactForm } from "./ContactForm";
+export { ContactTeaser } from "./ContactTeaser";
+export { Disclaimer } from "./Disclaimer";
+export { AppScreenshots } from "./AppScreenshots";
+export { Capabilities } from "./Capabilities";
+export { VersionSnapshot } from "./VersionSnapshot";
+export { Roadmap } from "./Roadmap";
+export { LegalContent } from "./LegalContent";

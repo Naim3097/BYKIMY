@@ -1,0 +1,91 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* ═══════════════════════════════════════════
+   BYKI DESIGN SYSTEM
+   Primary: BrandKit.md
+   Layout inspiration: Stripe (STRIPE_DESIGN_EXTRACTION.md)
+   ═══════════════════════════════════════════ */
+
+/* Satoshi Font — Regular 400 & Bold 700 ONLY */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ─── Tailwind v4 Theme ─── */
+@theme {
+  --font-sans: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* BYKI Brand Colors */
+  --color-byki-dark-green: #004e3c;
+  --color-byki-green: #28b55f;
+  --color-byki-light-green: #28b660;
+  --color-byki-black: #212123;
+  --color-byki-dark-gray: #7c7c7c;
+  --color-byki-medium-gray: #e0e0e0;
+  --color-byki-light-gray: #f6f6f6;
+  --color-byki-white: #ffffff;
+
+  /* Radius */
+  --radius-card: 12px;
+  --radius-card-lg: 16px;
+  --radius-pill: 9999px;
+}
+
+/* ─── Base Resets ─── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    color: var(--color-byki-black);
+    background: var(--color-byki-white);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ─── Typography ─── */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--color-byki-black);
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    color: var(--color-byki-dark-gray);
+    line-height: 1.6;
+  }
+
+  /* ─── Focus States ─── */
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid var(--color-byki-green);
+    outline-offset: 2px;
+  }
+
+  /* ─── Selection ─── */
+  ::selection {
+    background: rgba(40, 181, 95, 0.15);
+    color: var(--color-byki-black);
+  }
+}
